@@ -97,4 +97,4 @@ for i in range (0,n_test):
     y = m1_test*x1+m2_test*x2+m3_test*x2**2+b_test
     grades.append(y)
 
-print('The values printed are', nonlinear_regression(studytimes,gymtimes,grades))
+print(nonlinear_regression(studytimes,gymtimes,grades))
