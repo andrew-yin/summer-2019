@@ -5,6 +5,8 @@ Write a program that counts up the number of vowels contained in the string s. V
 
 For example, if s = 'azcbobobegghakl', your program should print:
 Number of vowels: 5
+
+Solution by: Andrew Yin
 '''
 
 vowel_count = 0
