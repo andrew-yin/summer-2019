@@ -10,21 +10,9 @@ Solution by: Andrew Yin
 '''
 
 bob_count = 0
-b_prev = False
-bo_prev = False
 
-for char in s:
-    if char == "b" and bo_prev == False:
-        b_prev = True
-    elif char == "o" and b_prev == True:
-        bo_prev = True
-        b_prev = False
-    elif char == "b" and bo_prev == True:
-        b_prev = True
-        bo_prev = False
+for i in range(len(s)-1):
+    if  i+2 < len(s) and s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b':
         bob_count += 1
-    else:
-        b_prev = False
-        bo_prev = False
-            
+        
 print("Number of times bob occurs is:" + " " + str(bob_count))
