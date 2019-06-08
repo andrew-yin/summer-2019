@@ -11,8 +11,8 @@ Solution by: Andrew Yin
 
 bob_count = 0
 
-for i in range(len(s)-1):
-    if  i+2 < len(s) and s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b':
+for i in range(len(s)-2):
+    if  s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b':
         bob_count += 1
         
 print("Number of times bob occurs is:" + " " + str(bob_count))
