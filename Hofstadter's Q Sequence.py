@@ -2,7 +2,7 @@
 """
 Created on Mon Jun 10 10:30:03 2019
 
-@author: Andrew
+@author: Andrew Yin
 """
 
 import matplotlib.pyplot as plt
@@ -14,7 +14,6 @@ def hofstadters_q_seq(n):
     for i in range(2,n):
         seq.append(seq[i - seq[i-1]] + seq[i - seq[i-2]])
     return seq
-
 
 num = 500
 
